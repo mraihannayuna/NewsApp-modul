@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-
-    public function index() {
-
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
         $posts = Post::where('deleted_at', null)->get();
         $active = $posts->count();
 
@@ -18,20 +20,54 @@ class PostController extends Controller
             'active_posts' => $active,
         ];
 
-        return view('posts.index', $data);
-
+        return view('auth.login', $data);
     }
 
-    public function show() {}
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
 
-    public function create() {}
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
 
-    public function store() {}
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
 
-    public function edit() {}
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
 
-    public function update() {}
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
 
-    public function delete() {}
-
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
 }

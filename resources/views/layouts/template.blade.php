@@ -7,7 +7,13 @@
     <title>News | @yield('title')</title>
 
     {{-- CDN Styling Bootstrap --}}
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    {{-- CDN Fontawesome --}}
+        <script
+      src="https://kit.fontawesome.com/b2c7ef89be.js"
+      crossorigin="anonymous"
+    ></script>
 
 </head>
 
@@ -23,3 +29,4 @@
 </body>
 
 </html>
+
